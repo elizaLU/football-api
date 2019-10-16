@@ -11,7 +11,7 @@ const Team = db.define(
       field: 'team_name'
     }
   },
-  //whole tabla name
+  //whole table name
   { tableName: 'football_teams' }
 )
 
