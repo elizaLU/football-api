@@ -1,4 +1,6 @@
 const express = require('express')
+const db = require('./db.js')
+const { Team } = require('./team/model')
 
 const app = express()
 const port = process.env.PORT || 4000;
