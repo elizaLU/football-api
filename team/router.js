@@ -14,11 +14,11 @@ router.post('/team', (req, res, next) => {
     .then(team => res.json(team))
     .catch(next)
 })
-
-router.get('/team/:id', (res, req, next) => {
+//test: http:400/team/2
+router.get('/team/:id', (req, res, next) =>
   Team.findByPk(req.params.id)
     .then(team => res.json(team))
     .catch(next)
-})
+);
 
 module.exports = router;
