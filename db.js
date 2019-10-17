@@ -4,7 +4,7 @@ const databaseUrl = process.env.DATABASE_URL || 'postgres://postgres:football-ap
 const db = new Sequelize(databaseUrl)
 
 db
-  .sync({ force: true }) //this will create table in db, force true will replace whole table after defining relations
+  .sync() //sync({ force: true })this will create table in db, force true will replace whole table after defining relations
   .then(() => console.log('Database schema updated'))
   .catch(console.error)
 
