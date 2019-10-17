@@ -8,17 +8,19 @@ router.get('/player', (req, res, next) => {
     .then(player => { res.json(player) })
     .catch(next)
 });
-//test: http :4000/team name=duck, number=13
+//test: http POST :4000/team name=duck, number=13
 router.post('/player', (req, res, next) => {
   Player.create(req.body)
     .then(player => res.json(player))
     .catch(next)
 })
-//test: http :4000/player/3
+//test: http GET :4000/player/3
 router.get('/player/:id', (req, res, next) =>
   Player.findByPk(req.params.id)
     .then(player => res.json(player))
     .catch(next)
 );
+
+//console.log("here's the player", Player)
 
 module.exports = router;

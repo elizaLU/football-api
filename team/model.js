@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize')
-
 const db = require("../db.js")
 
 const Team = db.define(
@@ -14,5 +13,7 @@ const Team = db.define(
   //whole table name
   { tableName: 'football_teams' }
 )
+
+//console.log("Team from team model:", Team)
 
 module.exports = Team

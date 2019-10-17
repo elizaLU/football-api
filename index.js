@@ -1,4 +1,5 @@
 const express = require('express')
+
 const bodyParser = require('body-parser')
 const jsonParser = bodyParser.json()
 //  commented out bcs already required in teamRouter & playerRouter:
@@ -16,5 +17,7 @@ app.use(jsonParser)
 app.use(teamRouter)
 app.use(playerRouter)
 
+
+// console.log("Team from Index.js", Player)
 
 app.listen(port, () => console.log(`Football app listening on port ${port}!`))
