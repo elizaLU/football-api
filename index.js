@@ -8,10 +8,10 @@ const jsonParser = bodyParser.json()
 //const { Player } = require('./player/model')
 const teamRouter = require('./team/router')
 const playerRouter = require('./player/router')
-
+const Model = require('./event/model')
 
 const app = express()
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
 app.use(jsonParser)
 app.use(teamRouter)
