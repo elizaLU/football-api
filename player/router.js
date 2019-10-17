@@ -1,6 +1,5 @@
-const Player = require('./model')
 const { Router } = require('express')
-
+const Player = require('./model')
 
 const router = new Router()
 //test: http :4000/team ==> []
