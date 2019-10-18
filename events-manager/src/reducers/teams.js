@@ -1,4 +1,4 @@
-import { TEAMS_FETCHED } from "../actions/teams"
+import { TEAMS_FETCHED, TEAM_CREATE_SUCCESS } from "../actions/teams"
 
 
 export default (state = [], action) => {
