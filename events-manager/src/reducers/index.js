@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import eventsFetched from './events'
+import teams from './teams'
 
 export default combineReducers({
-  eventsFetched
+  teams
 })
