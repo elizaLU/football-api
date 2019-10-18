@@ -15,13 +15,14 @@ router.post('/players', (req, res, next) => {
     .then(player => res.json(player))
     .catch(next)
 })
-//test: http GET :4000/player/3
+//test: http GET :4000/players/3
+//
 router.get('/players/:id', (req, res, next) =>
   Player.findByPk(req.params.id, { include: [Team] })
     .then(player => res.json(player))
     .catch(next)
 );
 
-//console.log("here's the player", Player)
+//console.log("here's the players", Player)
 
 module.exports = router;
