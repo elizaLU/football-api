@@ -1,3 +1,5 @@
+restart the server: docker restart bc8978ba0ec44391bdc590875f7247e8da58814a841bf21be6d89db8e25be1e8
+or docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=football-api  postgres
 
 # Created by https://www.gitignore.io/api/node,macos,windows
 # Edit at https://www.gitignore.io/?templates=node,macos,windows
