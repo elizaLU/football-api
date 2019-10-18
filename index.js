@@ -43,7 +43,7 @@ db
       { name: 'Carravetta', number: 10, teamId: 1 },
       { name: 'Brassier', number: 2, teamId: 1 },
       { name: 'Fardid', number: 3, teamId: 2 },
-      { name: 'Fungus', number: 5, teamId: 2 },
+      { name: 'GrumpyCat', number: 5, teamId: 2 },
       { name: 'Bacteria', number: 6, teamId: 2 },
       { name: 'Water', number: 7, teamId: 2 },
       { name: 'Earth', number: 10, teamId: 2 },
