@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 import store from './store'
 import { Provider } from 'react-redux'
 import { Route } from 'react-router-dom'
-import Home from './components/Home'
+//import Home from './components/Home'
+import TeamsListContainer from './components/TeamsListContainer'
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <div>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={TeamsListContainer} />
         </div>
       </Provider>
     );
