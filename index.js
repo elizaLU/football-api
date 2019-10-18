@@ -30,7 +30,7 @@ db
   .then(() => {
     console.log('Database schema has been updated.');
 
-    const teamNames = ['Nihilists', 'NatureForces']
+    const teamNames = ['Nihilists', 'NatureForces', 'Mathematicians', 'Wizards']
     const teams = teamNames.map(teamName => Team.create({ name: teamName }))
     return Promise.all(teams)
   })
